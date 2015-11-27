@@ -18,6 +18,6 @@ class MyTest < MiniTest::Unit::TestCase
   def test_hello_world
     get '/'
     assert last_response.ok?
-    assert_equal "Hello, World!", last_response.body
+    assert_equal "Server OK", last_response.body
   end
 end
